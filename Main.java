@@ -33,7 +33,7 @@ class Main {
           break;
         }
         else {
-          System.out.println(keepGoingString + " is not y/n. Please enter y/n.");
+          System.out.println("That was not y/n. Please enter y/n.");
         }
       }
     }
@@ -47,58 +47,5 @@ class Main {
       moneyAfter += yearlyDeposite;
     }
     return moneyAfter;
-  }
-
-  public static char getInputFromUser(){
-    Scanner scan = new Scanner(System.in);
-    double input = scan.nextDouble();
-    return input;
-  }
-
-
-
-
-
-
-
-
-
-  public static double getInputFromUser(){
-    while (true){
-      try {
-        Scanner scan = new Scanner(System.in);
-        double input = scan.nextDouble();
-        return input;
-      }
-      catch (Exception e){
-        System.out.println("That is not a double. Please enter double.");
-      }
-    }
-  }
-
-  public static int getInputFromUser(){
-    while (true){
-      try {
-        Scanner scan = new Scanner(System.in);
-        int input = scan.nextInt();
-        return input;
-      }
-      catch (Exception e){
-        System.out.println("That is not a int. Please enter int.");
-      }
-    }
-  }
-
-  public static String getInputFromUser(){
-    while (true){
-      try {
-        Scanner scan = new Scanner(System.in);
-        String input = scan.nextString();
-        return input;
-      }
-      catch (Exception e){
-        System.out.println("That is not a string. Please enter string.");
-      }
-    }
   }
 }
